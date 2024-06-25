@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "9d7397be-9f67-4197-9176-95e59f1a4017",
+		"name": "TestFcm Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21843340",
+		"_collection_link": "https://crimson-crescent-297589.postman.co/workspace/abc~aceca228-ee9d-46cb-9082-a7248a886eed/collection/21843340-9d7397be-9f67-4197-9176-95e59f1a4017?action=share&source=collection_link&creator=21843340"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "291491829148-jpj521h8p3gnrv0lf4882kullsjgf3jg.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/firebase.messaging",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Firebase Cloud Messaging API",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAARMwOLRE:APA91bEaE4QLny4RkxME2RfywxjfdMeTi-tD41jYkTuc43OZB3b5Sx-QUlpDh2u8iFZPcIjgZvtTy7CjUsvy0TkReFdU035XxbTfhJrNRs_UXAk5uqtGtkpbD_lH-BL12ErVb6G_7AO-",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"fEOhXPXJTwi4Of_Xh2l5P6:APA91bE9ytwvND2Hg_v4BX6iHarPLqncjkWHA600CYAZA99oULgoxST4tHCDmbFW25fZQ6DCut3j6070WonOhFd8pGZR4d0nOnSQzy5Tm9iY4k5C3RXpbLxG8GDNm9VMmoZyBYsM5j7-\",\r\n    \"delay_while_idle\": false,\r\n    \"priority\": \"high\",\r\n    \"content_available\": true,\r\n    \"data\": {\r\n        \"title\": \"Notificaion For IOS\",\r\n        \"body\": \"हिंदी दिवस पर भाषण (Speech in hindi): हिंदी भारत में सबसे अधिक लोगों के द्वारा बोली और समझी जाने वाली भाषा है। बीतते समय के साथ इसकी लोकप्रियता और बढ़ती जा रही है। 14 सितंबर, 1949 को संविधान सभा ने जनभाषा हिंदी को राजभाषा का दर्जा प्रदान किया। भारत दुनिया में सबसे ज्यादा विविध संस्कृतियों वाला देश है। धर्म, परंपराओं तथा भाषा में इसकी विविधता के बावजूद यहां के लोग एकता में विश्वास रखते हैं। बो हिंदी भारत की सबसे प्रमुख भाषा है। दुनियाभर में हिंदी भाषा तीसरी सबसे अधिक बोली जाने वाली भाषा है। भारत में विभिन्न भाषाएं बोली जाती हैं, लेकिन सबसे ज्यादा हिंदी भाषा बोली, लिखी व पढ़ी जाती है। वर्ष 1949 में हिंदी को हमारे देश में सर्वोच्च दर्जा प्राप्त हुआ और तब से हिंदी को हमारी राजभाषा माना जाता है।\",\r\n        \"contenta_available\": 1,\r\n        \"priority\": \"high\",\r\n        \"screen\": \"Promo\",\r\n        \"image\": \"https://picsum.photos/200/300\"\r\n    },\r\n    \"apns\": {\r\n        \"payload\": {\r\n            \"aps\": {\r\n                // Payloads coming from Admin SDK should specify params in camelCase. \r\n                // Payloads from REST API should specify in kebab-case\r\n                // see their respective reference documentation\r\n                \"content_available\": 1, // Important, to receive `onMessage` event in the foreground when message is incoming\r\n                \"mutable_content\": 1 //Important, without this the extension won't fire\r\n            },\r\n            \"headers\": {\r\n                \"apns-push-type\": \"background\",\r\n                \"apns-priority\": 10,\r\n                \"apns-topic\": \"com.gaminggle.app\"\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test ios Fcm",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "291491829148-jpj521h8p3gnrv0lf4882kullsjgf3jg.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/firebase.messaging",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Firebase Cloud Messaging API",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAARMwOLRE:APA91bEaE4QLny4RkxME2RfywxjfdMeTi-tD41jYkTuc43OZB3b5Sx-QUlpDh2u8iFZPcIjgZvtTy7CjUsvy0TkReFdU035XxbTfhJrNRs_UXAk5uqtGtkpbD_lH-BL12ErVb6G_7AO-",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"dw5OLhmkT2-YOjRyyzD-bx:APA91bHsBv8KEFrZteQGyp38nRyeIJkMFI3RSHbhs90DXhU9xynli96Zn5aekiUMlKR1kXlOrg96xx2p0QVBLMJCt6J4ghvJQfiWZvbcdgDma8W35euR_9n3uZwpSOkxvt5TbpzBfPyE\",\r\n    \"contentAvailable\": true,\r\n    \"priority\": \"high\",\r\n    // \"notification\": {\r\n    //     \"title\": \"Notificaion For IOS\",\r\n    //     \"body\": \"Notificaiton For IOS Test\",\r\n    //     \"content_available\": true,\r\n    //     \"priority\": \"high\"\r\n    // },\r\n    \"data\": {\r\n        \"title\": \"Notificaion For IOS2\",\r\n        \"body\": \"Notificaiton For IOS Test2 import notifee, { AndroidImportance, AndroidStyle, Notification, NotificationAndroid, AndroidBigPictureStyle, AndroidBigTextStyle } from '@notifee/react-native';\",\r\n        \"content_available\": true,\r\n        \"priority\": \"high\",\r\n        \"screen\": \"MatchDetails/76984\",\r\n        \"image\": \"https://picsum.photos/200/300\"\r\n    },\r\n    \"apns\": {\r\n        \"payload\": {\r\n            \"aps\": {\r\n                \"content_available\": true,\r\n                \"priority\":\"high\",\r\n                \"mutable-content\":true\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"apns-push-type\": \"background\",\r\n            \"apns-priority\": \"10\",\r\n            \"apns-topic\": \"com.gaminggle.app\" \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Holmeddoc_test",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "291491829148-jpj521h8p3gnrv0lf4882kullsjgf3jg.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/firebase.messaging",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Firebase Cloud Messaging API",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAARMwOLRE:APA91bEaE4QLny4RkxME2RfywxjfdMeTi-tD41jYkTuc43OZB3b5Sx-QUlpDh2u8iFZPcIjgZvtTy7CjUsvy0TkReFdU035XxbTfhJrNRs_UXAk5uqtGtkpbD_lH-BL12ErVb6G_7AO-",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": \"dw5OLhmkT2-YOjRyyzD-bx:APA91bHsBv8KEFrZteQGyp38nRyeIJkMFI3RSHbhs90DXhU9xynli96Zn5aekiUMlKR1kXlOrg96xx2p0QVBLMJCt6J4ghvJQfiWZvbcdgDma8W35euR_9n3uZwpSOkxvt5TbpzBfPyE\",\r\n    \"contentAvailable\": true,\r\n    \"priority\": \"high\",\r\n    // \"notification\": {\r\n    //     \"title\": \"Notificaion For IOS\",\r\n    //     \"body\": \"Notificaiton For IOS Test\",\r\n    //     \"content_available\": true,\r\n    //     \"priority\": \"high\"\r\n    // },\r\n    \"data\": {\r\n        \"title\": \"Notificaion For IOS2\",\r\n        \"body\": \"Notificaiton For IOS Test2 import notifee, { AndroidImportance, AndroidStyle, Notification, NotificationAndroid, AndroidBigPictureStyle, AndroidBigTextStyle } from '@notifee/react-native';\",\r\n        \"content_available\": true,\r\n        \"priority\": \"high\",\r\n        \"screen\": \"MatchDetails/76984\",\r\n        \"image\": \"https://picsum.photos/200/300\"\r\n    },\r\n    \"apns\": {\r\n        \"payload\": {\r\n            \"aps\": {\r\n                \"content_available\": true,\r\n                \"priority\":\"high\",\r\n                \"mutable-content\":true\r\n            }\r\n        },\r\n        \"headers\": {\r\n            \"apns-push-type\": \"background\",\r\n            \"apns-priority\": \"10\",\r\n            \"apns-topic\": \"com.gaminggle.app\" \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IOS Fcm Test 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAAa9zDanA:APA91bGTS44QOtlWIA4-_nDA3usJMVZXIrU-G1mVuM8X6vm86ICjGYBiD0Bj_SzocCHQYXNHXxKUrmzjar10OTlbcjZ5kP-QwW92nx77WKyPXwD_CplKr40uIXpzuXigICM4AloX89u1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"to\": \"fGKrgHqySOObQaka76QaUj:APA91bGMUrUrR77RWi_ihzaigYwqiC1nTwrdp5hNVOHhFRXA9MzTaH4nJ8iQm2JCpBGa7YrfK3zs-kwRIqsz0ycXlsF541_JhvLlD7FVs-HOypObo2v9S9DayXHMbnMsBJ80hslGDlCN\",\r\n  \"priority\": \"high\",\r\n  \"contentAvailable\": true,\r\n  \"notification\": {\r\n    \"title\": \"test\",\r\n    \"body\": \"test\"\r\n  },\r\n  \"data\": {\r\n    \"title\": \"test\",\r\n    \"body\": \"test\",\r\n    \"screen\":\"NavProfile\"\r\n  },\r\n  \"apns\": {\r\n    \"payload\": {\r\n      \"aps\": {\r\n        \"contentAvailable\": true\r\n      }\r\n    },\r\n    \"headers\": {\r\n      \"apns-push-type\": \"background\",\r\n      \"apns-priority\": 5,\r\n      \"apns-topic\": \"com.studioapp\"\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fitness localNotification",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "mypcot",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer AAAAa9zDanA:APA91bGTS44QOtlWIA4-_nDA3usJMVZXIrU-G1mVuM8X6vm86ICjGYBiD0Bj_SzocCHQYXNHXxKUrmzjar10OTlbcjZ5kP-QwW92nx77WKyPXwD_CplKr40uIXpzuXigICM4AloX89u1",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://4171-2405-201-202c-5802-9589-4879-fc25-1754.ngrok-free.app/webservices/v1/notification/list",
+					"protocol": "https",
+					"host": [
+						"4171-2405-201-202c-5802-9589-4879-fc25-1754",
+						"ngrok-free",
+						"app"
+					],
+					"path": [
+						"webservices",
+						"v1",
+						"notification",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

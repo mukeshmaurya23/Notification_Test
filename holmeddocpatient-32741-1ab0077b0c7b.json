@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "holmeddocpatient-32741",
+  "private_key_id": "1ab0077b0c7bcdc22f0d35378d8b244eaaa9d4e7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCtuy1fz8iqQiEx\nD+vBbvJClIp+rKcefCV/OdASRkbCwLOnVTyssPlp1jCzJqvNUDXBaodIwHunfeC1\nMQL2fSNPu56SsF3x0iHuTu3dPCuDuQO6Yuv22kNahXzTW1JrnZRuJwosr/UqbRXr\nBszLuOpVbCxPKxyDBbextX4ALbFZlYC9IcT5WTKJQC97Y4dyiSDDTqbDR8cHwH6q\ntJyy23kCCA3lEEGOSZNGBBKfwiLihCkcqCAuH/fSKRxNse8BaC841f2qLvB9dNWK\nTjuutMBVq6TnA9PSyXSQw3e2Gy6xF7aSnddVl/lrAZn4kxPntKzUs4NkDMapQLEj\nD43eshHpAgMBAAECggEAAa+bVR6zF9PkdpFs/EeTWkoOvgP26zjRNFbfSg4cia9N\nDwaovBRLl1dYyaRKboekvefGwFH94TY7hAahvLqiKRftBgdoIfykD6f8bvUyhui4\nvIpRN+gOV0aMW5C7UAgLdLY0RxK+EldUqx85xZBZ1dJi67HDaRIZIkRcoKvQ2Mmy\ngEi8P3zsfvRbPds1k8LcT1IVQSV0zqoPiUNsyhpMHUc8qaRa+9hEB6aEtQxFAWS4\nYzBUPMNxoD5R3o9JSkmDYdqi+2iS9TlSihWVotOSlKUnKN6lC7G2ucBA6HlTT8BC\niOZYrKqBg/4d/nhaPnQFbrIlbILtdrLV0qKsctbWwQKBgQDyFn9nkntBedEz29e2\nDg7uZ0hAVr/95QrGZKcEhta6qz/yUnWQ4hkEbDE0EE2hHiUdFmwuRzbTTZJ8573E\nMRvwXQwyVyy0SYbEVuQSme4SxOkhKEf4yqEIDMLP1mR0rWjTvOScLYopllgXfyjU\nzyYxMC0+hSRpinzWkb1EO/Xz9QKBgQC3twrOBC5zhjwv3VoiT17MDCszNk6lqmkp\nQAfwHEkVdAYecGIWBqfAy+rgWFHeezlMdqZwqD8f0Eh9O6CBH6wtZw0UkF6qks+S\nPqKgD3WbxGOZeMZa5TxhdexDwdVnd8e6HdJbwVb/IHug1D58wk+8j8NnOO4CTVYo\n3meWT0xhpQKBgBAb8SRqOet0eLhTs7n4m4O/ua4WV7ZEbIAhKIADnPxU8u9kD1Cx\nyuphbLDDOPc0s1GJMW+u63YKHmpTXWxVvD81Yd9jr6Tbk60y/wBB3/a9xamgLZHf\nofGQL9J2uL6O33/ffPLrkNsNlxURMB1hH3B8fTZA09h2D7KThh2pQ8eVAoGAToYi\nTCRlZmN93keSew/JyRV6cY1I2G6aPFNuESdF5bGN2/zVL+zwTuvaHMIjXCD3QMOG\nKKkBMivoj/6ogAh1o4JkiOGcVPQjXLMA98Ej18x9dd+1iKxqvo2UyvFSscL0z4xn\nmWhuMuZDcV7GxrSXOFWKg9hFgx5jMVy+kfSbBTECgYAnMEk6EybQ+RHuVoEYHMTe\n6Z38Blx3VB4GRwhyeCAPWEeAso65WPEoqfLXJIXSCYl12VNihSDTNkQQv+0Jo9/D\nwDr0sh5039YiEBETAtQeaocl31L+uoecNTVEUCjKo1EIBoCsT8LsBSfcfLfwA8hE\nG+nsgYQYDcV3lEnKoJdVCw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-bh996@holmeddocpatient-32741.iam.gserviceaccount.com",
+  "client_id": "105022107335373023947",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-bh996%40holmeddocpatient-32741.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
